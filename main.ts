@@ -12,6 +12,7 @@ input.onButtonPressed(Button.B, function () {
 })
 serial.onDataReceived(serial.delimiters(Delimiters.Hash), function () {
     speech_id = serial.readString()
+    basic.showString(speech_id)
     if (speech_id == "1#") {
         radio.sendString("1#")
     } else if (speech_id == "2#") {
