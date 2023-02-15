@@ -44,7 +44,7 @@ radio.setGroup(8)
 serial.redirect(
 SerialPin.P2,
 SerialPin.P1,
-BaudRate.BaudRate115200
+BaudRate.BaudRate9600
 )
 basic.showIcon(IconNames.Pitchfork)
 basic.forever(function () {
